@@ -6,6 +6,7 @@ import 'package:localization_lab/core/di.dart';
 import 'package:localization_lab/locale_bloc/cubit/localization_cubit.dart';
 import 'package:localization_lab/locale_bloc/cubit/localization_state.dart';
 import 'package:localization_lab/login_screen.dart';
+import 'package:localization_lab/strings.dart';
 import 'l10n/generated/app_localizations.dart';
 
 void main() async {
@@ -32,6 +33,10 @@ class MyApp extends StatelessWidget {
               GlobalCupertinoLocalizations.delegate,
             ],
             supportedLocales: AppLocalizations.supportedLocales,
+            builder: (context, child) {
+              Strings.init(AppLocalizations.of(context)!);
+              return child!;
+            },
             locale: state.locale,
             title: 'Flutter Demo',
             theme: ThemeData(

@@ -1,29 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localization_lab/locale_bloc/cubit/localization_cubit.dart';
+import 'package:localization_lab/strings.dart';
 import 'l10n/generated/app_localizations.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen extends StatelessWidget {
   
   const LoginScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
-}
-
-class _LoginScreenState extends State<LoginScreen> {
-
-
-  @override
   Widget build(BuildContext context) {
-
-    final l10n = AppLocalizations.of(context)!;
-
 
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text(l10n.loginTitle),
+          title: Text(Strings.loginTitle),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -31,13 +22,13 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               TextFormField(
                 decoration: InputDecoration(
-                  labelText: l10n.emailLabel,
+                  labelText: Strings.emailLabel,
                   prefixIcon: Icon(Icons.email_outlined),
                 ),
               ),
               TextFormField(
                 decoration: InputDecoration(
-                  labelText: l10n.passwordLabel,
+                  labelText: Strings.passwordLabel,
                   prefixIcon: Icon(Icons.lock_outline),
                 ),
               ),
@@ -46,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () {
                   // TODO: Implement login
                 },
-                child: Text(l10n.loginButton),
+                child: Text(Strings.loginButton),
               ),
               SizedBox(height: 16),
               DropdownButton<Locale>(
