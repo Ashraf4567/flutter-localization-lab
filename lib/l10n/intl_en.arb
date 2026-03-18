@@ -1,0 +1,19 @@
+{
+  "@@locale": "en",
+  "loginTitle": "Login",
+  "@loginTitle": {
+    "description": "Title for the login screen and app bar."
+  },
+  "emailLabel": "Email",
+  "@emailLabel": {
+    "description": "Label for the email address field."
+  },
+  "passwordLabel": "Password",
+  "@passwordLabel": {
+    "description": "Label for the password field."
+  },
+  "loginButton": "Login",
+  "@loginButton": {
+    "description": "Text for the login button."
+  }
+}

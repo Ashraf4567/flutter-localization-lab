@@ -1,0 +1,19 @@
+{
+  "@@locale": "ar",
+  "loginTitle": "تسجيل الدخول",
+  "@loginTitle": {
+    "description": "Title for the login screen and app bar."
+  },
+  "emailLabel": "البريد الإلكتروني",
+  "@emailLabel": {
+    "description": "Label for the email address field."
+  },
+  "passwordLabel": "كلمة المرور",
+  "@passwordLabel": {
+    "description": "Label for the password field."
+  },
+  "loginButton": "دخول",
+  "@loginButton": {
+    "description": "Text for the login button."
+  }
+}
